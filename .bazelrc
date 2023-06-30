@@ -14,7 +14,7 @@ build --java_runtime_version=remotejdk_17
 
 # Build Buddy wrapper has issues merging stdout and stderr when bazel uses curses.
 # See VER-2371
-build --curses=no --progress_report_interval=30
+# build --curses=no --progress_report_interval=30
 
 common --experimental_allow_tags_propagation
 build --nosandbox_default_allow_network
